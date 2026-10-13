@@ -1,1 +1,403 @@
-aW1wb3J0IHsgY3JlYXRlRmlsZVJvdXRlIH0gZnJvbSAiQHRhbnN0YWNrL3JlYWN0LXJvdXRlciI7CmltcG9ydCB7IE1lc3NhZ2VDaXJjbGUsIE1haWwsIENoZWNrLCBBcnJvd1JpZ2h0IH0gZnJvbSAibHVjaWRlLXJlYWN0IjsKaW1wb3J0IGV4YW1wbGVQbHVtYmVyIGZyb20gIi4uL2Fzc2V0cy9leGFtcGxlLXBsdW1iZXIuanBnIjsKaW1wb3J0IGV4YW1wbGVCYXJiZXIgZnJvbSAiLi4vYXNzZXRzL2V4YW1wbGUtYmFyYmVyLmpwZyI7CmltcG9ydCBleGFtcGxlQ2FmZSBmcm9tICIuLi9hc3NldHMvZXhhbXBsZS1jYWZlLmpwZyI7CmltcG9ydCBleGFtcGxlTGFuZHNjYXBlciBmcm9tICIuLi9hc3NldHMvZXhhbXBsZS1sYW5kc2NhcGVyLmpwZyI7Cgpjb25zdCBXSEFUU0FQUF9VUkwgPQogICJodHRwczovL3dhLm1lLzQ0Nzk1NzE2MzEyNz90ZXh0PSIgKwogIGVuY29kZVVSSUNvbXBvbmVudCgiSGkgT2xpdmVyISBJJ2QgbGlrZSBhIHdlYnNpdGUgYnVpbHQuIik7CmNvbnN0IEVNQUlMX1VSTCA9CiAgIm1haWx0bzpvc21pdGh5ODg4QGdtYWlsLmNvbT9zdWJqZWN0PSIgKwogIGVuY29kZVVSSUNvbXBvbmVudCgiV2Vic2l0ZSBlbnF1aXJ5Iik7CgpleHBvcnQgY29uc3QgUm91dGUgPSBjcmVhdGVGaWxlUm91dGUoIi8iKSh7CiAgaGVhZDogKCkgPT4gKHsKICAgIG1ldGE6IFsKICAgICAgeyB0aXRsZTogIk9saXZlciBTbWl0aCDigJQgV2Vic2l0ZXMgZnJvbSDCozMwIiB9LAogICAgICB7CiAgICAgICAgbmFtZTogImRlc2NyaXB0aW9uIiwKICAgICAgICBjb250ZW50OgogICAgICAgICAgIkFmZm9yZGFibGUgd2Vic2l0ZXMgYnVpbHQgZmFzdC4gwqMzMCBmb3IgMyBwYWdlcywgwqM1MCBmb3IgNCBwYWdlcywgwqM3MCBmb3IgNyBwYWdlcy4gR2V0IGluIHRvdWNoIG9uIFdoYXRzQXBwIG9yIGJ5IGVtYWlsLiIsCiAgICAgIH0sCiAgICAgIHsgcHJvcGVydHk6ICJvZzp0aXRsZSIsIGNvbnRlbnQ6ICJPbGl2ZXIgU21pdGgg4oCUIFdlYnNpdGVzIGZyb20gwqMzMCIgfSwKICAgICAgewogICAgICAgIHByb3BlcnR5OiAib2c6ZGVzY3JpcHRpb24iLAogICAgICAgIGNvbnRlbnQ6CiAgICAgICAgICAiQWZmb3JkYWJsZSB3ZWJzaXRlcyBidWlsdCBmYXN0LiDCozMwIGZvciAzIHBhZ2VzLCDCozUwIGZvciA0IHBhZ2VzLCDCozcwIGZvciA3IHBhZ2VzLiBHZXQgaW4gdG91Y2ggb24gV2hhdHNBcHAgb3IgYnkgZW1haWwuIiwKICAgICAgfSwKICAgICAgeyBwcm9wZXJ0eTogIm9nOnR5cGUiLCBjb250ZW50OiAid2Vic2l0ZSIgfSwKICAgICAgeyBuYW1lOiAidHdpdHRlcjpjYXJkIiwgY29udGVudDogInN1bW1hcnkiIH0sCiAgICBdLAogIH0pLAogIGNvbXBvbmVudDogSW5kZXgsCn0pOwoKY29uc3QgcGFja2FnZXMgPSBbCiAgewogICAgcHJpY2U6ICLCozMwIiwKICAgIHBhZ2VzOiAiMyBwYWdlcyIsCiAgICB0YWdsaW5lOiAiUGVyZmVjdCBmb3IgZ2V0dGluZyBzdGFydGVkIiwKICAgIGZlYXR1cmVzOiBbCiAgICAgICIzIGN1c3RvbSBwYWdlcyIsCiAgICAgICJNb2JpbGUtZnJpZW5kbHkgZGVzaWduIiwKICAgICAgIllvdXIgdGV4dCAmIHBob3RvcyIsCiAgICAgICJDb250YWN0IGRldGFpbHMgaW5jbHVkZWQiLAogICAgXSwKICAgIGZlYXR1cmVkOiBmYWxzZSwKICB9LAogIHsKICAgIHByaWNlOiAiwqM1MCIsCiAgICBwYWdlczogIjQgcGFnZXMiLAogICAgdGFnbGluZTogIk1vc3QgcG9wdWxhciIsCiAgICBmZWF0dXJlczogWwogICAgICAiNCBjdXN0b20gcGFnZXMiLAogICAgICAiTW9iaWxlLWZyaWVuZGx5IGRlc2lnbiIsCiAgICAgICJZb3VyIHRleHQgJiBwaG90b3MiLAogICAgICAiR2FsbGVyeSBvciBzZXJ2aWNlcyBwYWdlIiwKICAgIF0sCiAgICBmZWF0dXJlZDogdHJ1ZSwKICB9LAogIHsKICAgIHByaWNlOiAiwqM3MCIsCiAgICBwYWdlczogIjcgcGFnZXMiLAogICAgdGFnbGluZTogIlRoZSBmdWxsIHBhY2thZ2UiLAogICAgZmVhdHVyZXM6IFsKICAgICAgIjcgY3VzdG9tIHBhZ2VzIiwKICAgICAgIk1vYmlsZS1mcmllbmRseSBkZXNpZ24iLAogICAgICAiWW91ciB0ZXh0ICYgcGhvdG9zIiwKICAgICAgIlJvb20gdG8gZ3JvdyB5b3VyIHNpdGUiLAogICAgXSwKICAgIGZlYXR1cmVkOiBmYWxzZSwKICB9LApdOwoKY29uc3QgZXhhbXBsZXMgPSBbCiAgeyBuYW1lOiAiTG9jYWwgcGx1bWJlciIsIHByaWNlOiAiwqMzMCIsIGltYWdlOiBleGFtcGxlUGx1bWJlciwgcGFnZXM6IFsiSG9tZSIsICJTZXJ2aWNlcyIsICJDb250YWN0Il0sIGRlc2M6ICJTaW1wbGUgYW5kIGNsZWFyIOKAlCB3aGF0IHlvdSBkbywgd2hlcmUgeW91IHdvcmssIGFuZCBhIFdoYXRzQXBwIGJ1dHRvbi4iIH0sCiAgeyBuYW1lOiAiQmFyYmVyIHNob3AiLCBwcmljZTogIsKjNTAiLCBpbWFnZTogZXhhbXBsZUJhcmJlciwgcGFnZXM6IFsiSG9tZSIsICJQcmljZXMiLCAiR2FsbGVyeSIsICJGaW5kIHVzIl0sIGRlc2M6ICJTaG93IG9mZiB5b3VyIGJlc3QgY3V0cyB3aXRoIGEgcGhvdG8gZ2FsbGVyeSBhbmQgb3BlbmluZyBob3Vycy4iIH0sCiAgeyBuYW1lOiAiTG9jYWwgY2Fmw6kiLCBwcmljZTogIsKjNTAiLCBpbWFnZTogZXhhbXBsZUNhZmUsIHBhZ2VzOiBbIkhvbWUiLCAiTWVudSIsICJBYm91dCIsICJGaW5kIHVzIl0sIGRlc2M6ICJBIHRpZHkgbWVudSwgeW91ciBzdG9yeSwgYW5kIGEgbWFwIHNvIHBlb3BsZSBjYW4gZmluZCB5b3UuIiB9LAogIHsgbmFtZTogIkxhbmRzY2FwaW5nIGJ1c2luZXNzIiwgcHJpY2U6ICLCozcwIiwgaW1hZ2U6IGV4YW1wbGVMYW5kc2NhcGVyLCBwYWdlczogWyJIb21lIiwgIkFib3V0IiwgIkdhcmRlbnMiLCAiUGF0aW9zIiwgIkZlbmNpbmciLCAiUHJvamVjdHMiLCAiRkFRIl0sIGRlc2M6ICJBIHBhZ2UgZm9yIGVhY2ggc2VydmljZSwgYSBwcm9qZWN0IGdhbGxlcnkgYW5kIGFuc3dlcnMgdG8gY29tbW9uIHF1ZXN0aW9ucy4iIH0sCl07Cgpjb25zdCBjb21wYXJpc29uID0gWwogIFsiTnVtYmVyIG9mIHBhZ2VzIiwgIjMiLCAiNCIsICI3Il0sCiAgWyJXb3JrcyBvbiBwaG9uZXMiLCAiWWVzIiwgIlllcyIsICJZZXMiXSwKICBbIldoYXRzQXBwICYgZW1haWwgYnV0dG9ucyIsICJZZXMiLCAiWWVzIiwgIlllcyJdLAogIFsiUGhvdG8gZ2FsbGVyeSIsICJBIGZldyBwaG90b3MiLCAiRnVsbCBnYWxsZXJ5IHBhZ2UiLCAiR2FsbGVyeSArIHByb2plY3RzIl0sCiAgWyJTZXJ2aWNlcyIsICJPbiBvbmUgcGFnZSIsICJPd24gcGFnZSIsICJBIHBhZ2UgcGVyIHNlcnZpY2UiXSwKICBbIkZBUSBwYWdlIiwgIuKAlCIsICLigJQiLCAiWWVzIl0sCiAgWyJCZXN0IGZvciIsICJHZXR0aW5nIHN0YXJ0ZWQiLCAiU21hbGwgc2hvcHMgJiB0cmFkZXMiLCAiQmlnZ2VyIGJ1c2luZXNzZXMiXSwKXTsKCmZ1bmN0aW9uIEluZGV4KCkgewogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0ibWluLWgtc2NyZWVuIGJnLWJhY2tncm91bmQiPgogICAgICB7LyogSGVybyAqL30KICAgICAgPGhlYWRlciBjbGFzc05hbWU9Im14LWF1dG8gbWF4LXctNXhsIHB4LTYgcHQtMjAgcGItMTYgdGV4dC1jZW50ZXIiPgogICAgICAgIDxwIGNsYXNzTmFtZT0ibWItNCBpbmxpbmUtYmxvY2sgcm91bmRlZC1mdWxsIGJvcmRlciBib3JkZXItcHJpbWFyeS80MCBiZy1wcmltYXJ5LzEwIHB4LTQgcHktMSB0ZXh0LXNtIGZvbnQtbWVkaXVtIHRleHQtcHJpbWFyeSI+CiAgICAgICAgICBXZWJzaXRlcyBidWlsdCBieSBPbGl2ZXIgU21pdGgKICAgICAgICA8L3A+CiAgICAgICAgPGgxIGNsYXNzTmFtZT0iZm9udC1kaXNwbGF5IHRleHQtNXhsIGZvbnQtZXh0cmFib2xkIGxlYWRpbmctdGlnaHQgdHJhY2tpbmctdGlnaHQgdGV4dC1mb3JlZ3JvdW5kIHNtOnRleHQtN3hsIj4KICAgICAgICAgIEEgcHJvcGVyIHdlYnNpdGUsCiAgICAgICAgICA8YnIgLz4KICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC1wcmltYXJ5Ij5mcm9tIGp1c3QgwqMzMC48L3NwYW4+CiAgICAgICAgPC9oMT4KICAgICAgICA8cCBjbGFzc05hbWU9Im14LWF1dG8gbXQtNiBtYXgtdy14bCB0ZXh0LWxnIHRleHQtbXV0ZWQtZm9yZWdyb3VuZCI+CiAgICAgICAgICBJIGJ1aWxkIGNsZWFuLCBmYXN0LCBtb2JpbGUtZnJpZW5kbHkgd2Vic2l0ZXMgZm9yIHNtYWxsIGJ1c2luZXNzZXMgYW5kCiAgICAgICAgICBpbmRpdmlkdWFscy4gUGljayBhIHBhY2thZ2UsIG1lc3NhZ2UgbWUsIGFuZCBsZXQncyBnZXQgeW91IG9ubGluZS4KICAgICAgICA8L3A+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9Im10LTEwIGZsZXggZmxleC1jb2wgaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIGdhcC00IHNtOmZsZXgtcm93Ij4KICAgICAgICAgIDxhCiAgICAgICAgICAgIGhyZWY9e1dIQVRTQVBQX1VSTH0KICAgICAgICAgICAgdGFyZ2V0PSJfYmxhbmsiCiAgICAgICAgICAgIHJlbD0ibm9vcGVuZXIgbm9yZWZlcnJlciIKICAgICAgICAgICAgY2xhc3NOYW1lPSJpbmxpbmUtZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIgcm91bmRlZC1mdWxsIGJnLXdoYXRzYXBwIHB4LTggcHktNCB0ZXh0LWJhc2UgZm9udC1zZW1pYm9sZCB0ZXh0LXdoYXRzYXBwLWZvcmVncm91bmQgc2hhZG93LWxnIHRyYW5zaXRpb24tdHJhbnNmb3JtIGhvdmVyOnNjYWxlLTEwNSIKICAgICAgICAgID4KICAgICAgICAgICAgPE1lc3NhZ2VDaXJjbGUgY2xhc3NOYW1lPSJoLTUgdy01IiAvPgogICAgICAgICAgICBXaGF0c0FwcCBtZQogICAgICAgICAgPC9hPgogICAgICAgICAgPGEKICAgICAgICAgICAgaHJlZj17RU1BSUxfVVJMfQogICAgICAgICAgICBjbGFzc05hbWU9ImlubGluZS1mbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiByb3VuZGVkLWZ1bGwgYm9yZGVyIGJvcmRlci1ib3JkZXIgYmctY2FyZCBweC04IHB5LTQgdGV4dC1iYXNlIGZvbnQtc2VtaWJvbGQgdGV4dC1jYXJkLWZvcmVncm91bmQgdHJhbnNpdGlvbi1jb2xvcnMgaG92ZXI6YmctYWNjZW50IgogICAgICAgICAgPgogICAgICAgICAgICA8TWFpbCBjbGFzc05hbWU9ImgtNSB3LTUiIC8+CiAgICAgICAgICAgIEVtYWlsIG1lCiAgICAgICAgICA8L2E+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvaGVhZGVyPgoKICAgICAgey8qIFByaWNpbmcgKi99CiAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT0ibXgtYXV0byBtYXgtdy02eGwgcHgtNiBwYi0yNCI+CiAgICAgICAgPGgyIGNsYXNzTmFtZT0ibWItMTIgdGV4dC1jZW50ZXIgZm9udC1kaXNwbGF5IHRleHQtM3hsIGZvbnQtYm9sZCB0ZXh0LWZvcmVncm91bmQgc206dGV4dC00eGwiPgogICAgICAgICAgU2ltcGxlLCBob25lc3QgcHJpY2luZwogICAgICAgIDwvaDI+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImdyaWQgZ2FwLTggbWQ6Z3JpZC1jb2xzLTMiPgogICAgICAgICAge3BhY2thZ2VzLm1hcCgocGtnKSA9PiAoCiAgICAgICAgICAgIDxkaXYKICAgICAgICAgICAgICBrZXk9e3BrZy5wcmljZX0KICAgICAgICAgICAgICBjbGFzc05hbWU9ewogICAgICAgICAgICAgICAgcGtnLmZlYXR1cmVkCiAgICAgICAgICAgICAgICAgID8gInJlbGF0aXZlIHJvdW5kZWQtM3hsIGJvcmRlci0yIGJvcmRlci1wcmltYXJ5IGJnLWNhcmQgcC04IHNoYWRvdy14bCBzaGFkb3ctcHJpbWFyeS8yMCIKICAgICAgICAgICAgICAgICAgOiAicmVsYXRpdmUgcm91bmRlZC0zeGwgYm9yZGVyIGJvcmRlci1ib3JkZXIgYmctY2FyZCBwLTgiCiAgICAgICAgICAgICAgfQogICAgICAgICAgICA+CiAgICAgICAgICAgICAge3BrZy5mZWF0dXJlZCAmJiAoCiAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9ImFic29sdXRlIC10b3AtNCBsZWZ0LTEvMiAtdHJhbnNsYXRlLXgtMS8yIHJvdW5kZWQtZnVsbCBiZy1wcmltYXJ5IHB4LTQgcHktMSB0ZXh0LXhzIGZvbnQtYm9sZCB1cHBlcmNhc2UgdHJhY2tpbmctd2lkZSB0ZXh0LXByaW1hcnktZm9yZWdyb3VuZCI+CiAgICAgICAgICAgICAgICAgIE1vc3QgcG9wdWxhcgogICAgICAgICAgICAgICAgPC9zcGFuPgogICAgICAgICAgICAgICl9CiAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXNtIGZvbnQtbWVkaXVtIHRleHQtbXV0ZWQtZm9yZWdyb3VuZCI+CiAgICAgICAgICAgICAgICB7cGtnLnRhZ2xpbmV9CiAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJtdC0yIGZsZXggaXRlbXMtYmFzZWxpbmUgZ2FwLTIiPgogICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJmb250LWRpc3BsYXkgdGV4dC01eGwgZm9udC1leHRyYWJvbGQgdGV4dC1mb3JlZ3JvdW5kIj4KICAgICAgICAgICAgICAgICAge3BrZy5wcmljZX0KICAgICAgICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC1sZyB0ZXh0LW11dGVkLWZvcmVncm91bmQiPgogICAgICAgICAgICAgICAgICAvIHtwa2cucGFnZXN9CiAgICAgICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPHVsIGNsYXNzTmFtZT0ibXQtNiBzcGFjZS15LTMiPgogICAgICAgICAgICAgICAge3BrZy5mZWF0dXJlcy5tYXAoKGYpID0+ICgKICAgICAgICAgICAgICAgICAgPGxpIGtleT17Zn0gY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLXN0YXJ0IGdhcC0yIHRleHQtc20gdGV4dC1jYXJkLWZvcmVncm91bmQiPgogICAgICAgICAgICAgICAgICAgIDxDaGVjayBjbGFzc05hbWU9Im10LTAuNSBoLTQgdy00IHNocmluay0wIHRleHQtcHJpbWFyeSIgLz4KICAgICAgICAgICAgICAgICAgICB7Zn0KICAgICAgICAgICAgICAgICAgPC9saT4KICAgICAgICAgICAgICAgICkpfQogICAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICAgICAgPGEKICAgICAgICAgICAgICAgIGhyZWY9e1dIQVRTQVBQX1VSTH0KICAgICAgICAgICAgICAgIHRhcmdldD0iX2JsYW5rIgogICAgICAgICAgICAgICAgcmVsPSJub29wZW5lciBub3JlZmVycmVyIgogICAgICAgICAgICAgICAgY2xhc3NOYW1lPXsKICAgICAgICAgICAgICAgICAgcGtnLmZlYXR1cmVkCiAgICAgICAgICAgICAgICAgICAgPyAibXQtOCBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBnYXAtMiByb3VuZGVkLWZ1bGwgYmctcHJpbWFyeSBweC02IHB5LTMgdGV4dC1zbSBmb250LXNlbWlib2xkIHRleHQtcHJpbWFyeS1mb3JlZ3JvdW5kIHRyYW5zaXRpb24tdHJhbnNmb3JtIGhvdmVyOnNjYWxlLTEwNSIKICAgICAgICAgICAgICAgICAgICA6ICJtdC04IGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIGdhcC0yIHJvdW5kZWQtZnVsbCBib3JkZXIgYm9yZGVyLWJvcmRlciBiZy1iYWNrZ3JvdW5kIHB4LTYgcHktMyB0ZXh0LXNtIGZvbnQtc2VtaWJvbGQgdGV4dC1mb3JlZ3JvdW5kIHRyYW5zaXRpb24tY29sb3JzIGhvdmVyOmJnLWFjY2VudCIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICBHZXQgc3RhcnRlZAogICAgICAgICAgICAgICAgPEFycm93UmlnaHQgY2xhc3NOYW1lPSJoLTQgdy00IiAvPgogICAgICAgICAgICAgIDwvYT4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICApKX0KICAgICAgICA8L2Rpdj4KICAgICAgPC9zZWN0aW9uPgoKICAgICAgey8qIEV4YW1wbGVzICovfQogICAgICA8c2VjdGlvbiBjbGFzc05hbWU9Im14LWF1dG8gbWF4LXctNnhsIHB4LTYgcGItMjQiPgogICAgICAgIDxoMiBjbGFzc05hbWU9Im1iLTQgdGV4dC1jZW50ZXIgZm9udC1kaXNwbGF5IHRleHQtM3hsIGZvbnQtYm9sZCB0ZXh0LWZvcmVncm91bmQgc206dGV4dC00eGwiPgogICAgICAgICAgRXhhbXBsZSB3ZWJzaXRlcwogICAgICAgIDwvaDI+CiAgICAgICAgPHAgY2xhc3NOYW1lPSJteC1hdXRvIG1iLTEyIG1heC13LXhsIHRleHQtY2VudGVyIHRleHQtbXV0ZWQtZm9yZWdyb3VuZCI+CiAgICAgICAgICBIZXJlJ3MgdGhlIGtpbmQgb2Ygc2l0ZSB5b3UgY291bGQgZ2V0IHdpdGggZWFjaCBwYWNrYWdlLgogICAgICAgIDwvcD4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZ3JpZCBnYXAtNiBzbTpncmlkLWNvbHMtMiI+CiAgICAgICAgICB7ZXhhbXBsZXMubWFwKChleCkgPT4gKAogICAgICAgICAgICA8ZGl2IGtleT17ZXgubmFtZX0gY2xhc3NOYW1lPSJvdmVyZmxvdy1oaWRkZW4gcm91bmRlZC0zeGwgYm9yZGVyIGJvcmRlci1ib3JkZXIgYmctY2FyZCI+CiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImJvcmRlci1iIGJvcmRlci1ib3JkZXIiPgogICAgICAgICAgICAgICAgPGltZwogICAgICAgICAgICAgICAgICBzcmM9e2V4LmltYWdlfQogICAgICAgICAgICAgICAgICBhbHQ9e2Ake2V4Lm5hbWV9IHdlYnNpdGUgZXhhbXBsZWB9CiAgICAgICAgICAgICAgICAgIGxvYWRpbmc9ImxhenkiCiAgICAgICAgICAgICAgICAgIHdpZHRoPXsxMDI0fQogICAgICAgICAgICAgICAgICBoZWlnaHQ9ezY0MH0KICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJhc3BlY3QtWzgvNV0gdy1mdWxsIG9iamVjdC1jb3ZlciBvYmplY3QtdG9wIgogICAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGZsZXgtd3JhcCBnYXAtMiBwLTQiPgogICAgICAgICAgICAgICAgICB7ZXgucGFnZXMubWFwKChwKSA9PiAoCiAgICAgICAgICAgICAgICAgICAgPHNwYW4ga2V5PXtwfSBjbGFzc05hbWU9InJvdW5kZWQtZnVsbCBiZy1tdXRlZCBweC0zIHB5LTEgdGV4dC14cyB0ZXh0LWZvcmVncm91bmQiPgogICAgICAgICAgICAgICAgICAgICAge3B9CiAgICAgICAgICAgICAgICAgICAgPC9zcGFuPgogICAgICAgICAgICAgICAgICApKX0KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJwLTYiPgogICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiBnYXAtNCI+CiAgICAgICAgICAgICAgICAgIDxoMyBjbGFzc05hbWU9ImZvbnQtZGlzcGxheSB0ZXh0LXhsIGZvbnQtYm9sZCB0ZXh0LWNhcmQtZm9yZWdyb3VuZCI+e2V4Lm5hbWV9PC9oMz4KICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJyb3VuZGVkLWZ1bGwgYmctcHJpbWFyeS8xNSBweC0zIHB5LTEgdGV4dC1zbSBmb250LXNlbWlib2xkIHRleHQtcHJpbWFyeSI+CiAgICAgICAgICAgICAgICAgICAge2V4LnByaWNlfQogICAgICAgICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0ibXQtMiB0ZXh0LXNtIHRleHQtbXV0ZWQtZm9yZWdyb3VuZCI+e2V4LmRlc2N9PC9wPgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICkpfQogICAgICAgIDwvZGl2PgogICAgICA8L3NlY3Rpb24+CgogICAgICB7LyogQ29tcGFyaXNvbiAqL30KICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPSJteC1hdXRvIG1heC13LTV4bCBweC02IHBiLTI0Ij4KICAgICAgICA8aDIgY2xhc3NOYW1lPSJtYi0xMiB0ZXh0LWNlbnRlciBmb250LWRpc3BsYXkgdGV4dC0zeGwgZm9udC1ib2xkIHRleHQtZm9yZWdyb3VuZCBzbTp0ZXh0LTR4bCI+CiAgICAgICAgICBDb21wYXJlIHRoZSBwYWNrYWdlcwogICAgICAgIDwvaDI+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9Im92ZXJmbG93LXgtYXV0byByb3VuZGVkLTN4bCBib3JkZXIgYm9yZGVyLWJvcmRlciBiZy1jYXJkIj4KICAgICAgICAgIDx0YWJsZSBjbGFzc05hbWU9InctZnVsbCBtaW4tdy1bNTYwcHhdIHRleHQtbGVmdCB0ZXh0LXNtIj4KICAgICAgICAgICAgPHRoZWFkPgogICAgICAgICAgICAgIDx0ciBjbGFzc05hbWU9ImJvcmRlci1iIGJvcmRlci1ib3JkZXIiPgogICAgICAgICAgICAgICAgPHRoIGNsYXNzTmFtZT0icC00IHRleHQtbXV0ZWQtZm9yZWdyb3VuZCI+V2hhdCB5b3UgZ2V0PC90aD4KICAgICAgICAgICAgICAgIDx0aCBjbGFzc05hbWU9InAtNCBmb250LWRpc3BsYXkgdGV4dC1sZyB0ZXh0LWNhcmQtZm9yZWdyb3VuZCI+wqMzMDwvdGg+CiAgICAgICAgICAgICAgICA8dGggY2xhc3NOYW1lPSJwLTQgZm9udC1kaXNwbGF5IHRleHQtbGcgdGV4dC1wcmltYXJ5Ij7CozUwPC90aD4KICAgICAgICAgICAgICAgIDx0aCBjbGFzc05hbWU9InAtNCBmb250LWRpc3BsYXkgdGV4dC1sZyB0ZXh0LWNhcmQtZm9yZWdyb3VuZCI+wqM3MDwvdGg+CiAgICAgICAgICAgICAgPC90cj4KICAgICAgICAgICAgPC90aGVhZD4KICAgICAgICAgICAgPHRib2R5PgogICAgICAgICAgICAgIHtjb21wYXJpc29uLm1hcCgocm93KSA9PiAoCiAgICAgICAgICAgICAgICA8dHIga2V5PXtyb3dbMF19IGNsYXNzTmFtZT0iYm9yZGVyLWIgYm9yZGVyLWJvcmRlciBsYXN0OmJvcmRlci0wIj4KICAgICAgICAgICAgICAgICAgPHRkIGNsYXNzTmFtZT0icC00IGZvbnQtbWVkaXVtIHRleHQtY2FyZC1mb3JlZ3JvdW5kIj57cm93WzBdfTwvdGQ+CiAgICAgICAgICAgICAgICAgIHtyb3cuc2xpY2UoMSkubWFwKChjZWxsLCBpKSA9PiAoCiAgICAgICAgICAgICAgICAgICAgPHRkIGtleT17aX0gY2xhc3NOYW1lPSJwLTQgdGV4dC1tdXRlZC1mb3JlZ3JvdW5kIj57Y2VsbH08L3RkPgogICAgICAgICAgICAgICAgICApKX0KICAgICAgICAgICAgICAgIDwvdHI+CiAgICAgICAgICAgICAgKSl9CiAgICAgICAgICAgIDwvdGJvZHk+CiAgICAgICAgICA8L3RhYmxlPgogICAgICAgIDwvZGl2PgogICAgICA8L3NlY3Rpb24+CgogICAgICB7LyogQ29udGFjdCAqL30KICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPSJib3JkZXItdCBib3JkZXItYm9yZGVyIGJnLWNhcmQiPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJteC1hdXRvIG1heC13LTN4bCBweC02IHB5LTIwIHRleHQtY2VudGVyIj4KICAgICAgICAgIDxoMiBjbGFzc05hbWU9ImZvbnQtZGlzcGxheSB0ZXh0LTN4bCBmb250LWJvbGQgdGV4dC1jYXJkLWZvcmVncm91bmQgc206dGV4dC00eGwiPgogICAgICAgICAgICBSZWFkeSB0byBnZXQgb25saW5lPwogICAgICAgICAgPC9oMj4KICAgICAgICAgIDxwIGNsYXNzTmFtZT0ibXQtNCB0ZXh0LWxnIHRleHQtbXV0ZWQtZm9yZWdyb3VuZCI+CiAgICAgICAgICAgIFRoZSBxdWlja2VzdCB3YXkgdG8gcmVhY2ggbWUgaXMgV2hhdHNBcHAgb3IgZW1haWwg4oCUIEkgZG9uJ3QgdGFrZQogICAgICAgICAgICBwaG9uZSBjYWxscywgc28gZHJvcCBtZSBhIG1lc3NhZ2UgYW5kIEknbGwgZ2V0IGJhY2sgdG8geW91LgogICAgICAgICAgPC9wPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9Im10LTEwIGZsZXggZmxleC1jb2wgaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIGdhcC00IHNtOmZsZXgtcm93Ij4KICAgICAgICAgICAgPGEKICAgICAgICAgICAgICBocmVmPXtXSEFUU0FQUF9VUkx9CiAgICAgICAgICAgICAgdGFyZ2V0PSJfYmxhbmsiCiAgICAgICAgICAgICAgcmVsPSJub29wZW5lciBub3JlZmVycmVyIgogICAgICAgICAgICAgIGNsYXNzTmFtZT0iaW5saW5lLWZsZXggaXRlbXMtY2VudGVyIGdhcC0yIHJvdW5kZWQtZnVsbCBiZy13aGF0c2FwcCBweC04IHB5LTQgdGV4dC1iYXNlIGZvbnQtc2VtaWJvbGQgdGV4dC13aGF0c2FwcC1mb3JlZ3JvdW5kIHNoYWRvdy1sZyB0cmFuc2l0aW9uLXRyYW5zZm9ybSBob3ZlcjpzY2FsZS0xMDUiCiAgICAgICAgICAgID4KICAgICAgICAgICAgICA8TWVzc2FnZUNpcmNsZSBjbGFzc05hbWU9ImgtNSB3LTUiIC8+CiAgICAgICAgICAgICAgMDc5NTcgMTYzMTI3CiAgICAgICAgICAgIDwvYT4KICAgICAgICAgICAgPGEKICAgICAgICAgICAgICBocmVmPXtFTUFJTF9VUkx9CiAgICAgICAgICAgICAgY2xhc3NOYW1lPSJpbmxpbmUtZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIgcm91bmRlZC1mdWxsIGJvcmRlciBib3JkZXItYm9yZGVyIGJnLWJhY2tncm91bmQgcHgtOCBweS00IHRleHQtYmFzZSBmb250LXNlbWlib2xkIHRleHQtZm9yZWdyb3VuZCB0cmFuc2l0aW9uLWNvbG9ycyBob3ZlcjpiZy1hY2NlbnQiCiAgICAgICAgICAgID4KICAgICAgICAgICAgICA8TWFpbCBjbGFzc05hbWU9ImgtNSB3LTUiIC8+CiAgICAgICAgICAgICAgb3NtaXRoeTg4OEBnbWFpbC5jb20KICAgICAgICAgICAgPC9hPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvc2VjdGlvbj4KCiAgICAgIDxmb290ZXIgY2xhc3NOYW1lPSJib3JkZXItdCBib3JkZXItYm9yZGVyIHB5LTggdGV4dC1jZW50ZXIgdGV4dC1zbSB0ZXh0LW11dGVkLWZvcmVncm91bmQiPgogICAgICAgIMKpIHtuZXcgRGF0ZSgpLmdldEZ1bGxZZWFyKCl9IE9saXZlciBTbWl0aCDigJQgV2Vic2l0ZXMgZnJvbSDCozMwCiAgICAgIDwvZm9vdGVyPgogICAgPC9kaXY+CiAgKTsKfQo=
+import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
+import { MessageCircle, Mail, Check, ArrowRight, Send } from "lucide-react";
+import examplePlumber from "../assets/example-plumber.jpg";
+import exampleBarber from "../assets/example-barber.jpg";
+import exampleCafe from "../assets/example-cafe.jpg";
+import exampleLandscaper from "../assets/example-landscaper.jpg";
+
+const WHATSAPP_URL =
+  "https://wa.me/447957163127?text=" +
+  encodeURIComponent("Hi Oliver! I'd like a website built.");
+const EMAIL_URL =
+  "mailto:osmithy888@gmail.com?subject=" +
+  encodeURIComponent("Website enquiry");
+
+export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Oliver Smith — Websites from £30" },
+      {
+        name: "description",
+        content:
+          "Affordable websites built fast. £30 for 3 pages, £50 for 4 pages, £70 for 7 pages. Get in touch on WhatsApp or by email.",
+      },
+      { property: "og:title", content: "Oliver Smith — Websites from £30" },
+      {
+        property: "og:description",
+        content:
+          "Affordable websites built fast. £30 for 3 pages, £50 for 4 pages, £70 for 7 pages. Get in touch on WhatsApp or by email.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
+    ],
+  }),
+  component: Index,
+});
+
+const packages = [
+  {
+    price: "£30",
+    pages: "3 pages",
+    tagline: "Perfect for getting started",
+    features: [
+      "3 custom pages",
+      "Mobile-friendly design",
+      "Your text & photos",
+      "Contact details included",
+    ],
+    featured: false,
+  },
+  {
+    price: "£50",
+    pages: "4 pages",
+    tagline: "Most popular",
+    features: [
+      "4 custom pages",
+      "Mobile-friendly design",
+      "Your text & photos",
+      "Gallery or services page",
+    ],
+    featured: true,
+  },
+  {
+    price: "£70",
+    pages: "7 pages",
+    tagline: "The full package",
+    features: [
+      "7 custom pages",
+      "Mobile-friendly design",
+      "Your text & photos",
+      "Room to grow your site",
+    ],
+    featured: false,
+  },
+];
+
+const examples = [
+  { name: "Local plumber", price: "£30", image: examplePlumber, pages: ["Home", "Services", "Contact"], desc: "Simple and clear — what you do, where you work, and a WhatsApp button." },
+  { name: "Barber shop", price: "£50", image: exampleBarber, pages: ["Home", "Prices", "Gallery", "Find us"], desc: "Show off your best cuts with a photo gallery and opening hours." },
+  { name: "Local café", price: "£50", image: exampleCafe, pages: ["Home", "Menu", "About", "Find us"], desc: "A tidy menu, your story, and a map so people can find you." },
+  { name: "Landscaping business", price: "£70", image: exampleLandscaper, pages: ["Home", "About", "Gardens", "Patios", "Fencing", "Projects", "FAQ"], desc: "A page for each service, a project gallery and answers to common questions." },
+];
+
+const comparison = [
+  ["Number of pages", "3", "4", "7"],
+  ["Works on phones", "Yes", "Yes", "Yes"],
+  ["WhatsApp & email buttons", "Yes", "Yes", "Yes"],
+  ["Photo gallery", "A few photos", "Full gallery page", "Gallery + projects"],
+  ["Services", "On one page", "Own page", "A page per service"],
+  ["FAQ page", "—", "—", "Yes"],
+  ["Best for", "Getting started", "Small shops & trades", "Bigger businesses"],
+];
+
+function ContactForm() {
+  const [sent, setSent] = useState(false);
+  const [error, setError] = useState("");
+
+  if (sent) {
+    return (
+      <div className="mx-auto mt-12 max-w-md rounded-3xl border border-border bg-background p-8 text-center">
+        <Check className="mx-auto h-8 w-8 text-primary" />
+        <p className="mt-4 font-display text-xl font-bold text-foreground">
+          Message sent!
+        </p>
+        <p className="mt-2 text-sm text-muted-foreground">
+          Thanks for getting in touch — I'll get back to you soon.
+        </p>
+      </div>
+    );
+  }
+
+  return (
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      onSubmit={(e) => {
+        const form = e.currentTarget;
+        const data = new FormData(form);
+        const name = String(data.get("name") || "").trim();
+        const email = String(data.get("email") || "").trim();
+        const message = String(data.get("message") || "").trim();
+        if (!name || !email || !message) {
+          e.preventDefault();
+          setError("Please fill in your name, email and message.");
+          return;
+        }
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          e.preventDefault();
+          setError("That email address doesn't look right.");
+          return;
+        }
+        setError("");
+        setSent(true);
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(data as unknown as Record<string, string>).toString(),
+        }).catch(() => {});
+      }}
+      className="mx-auto mt-12 max-w-md rounded-3xl border border-border bg-background p-8 text-left"
+    >
+      <input type="hidden" name="form-name" value="contact" />
+      <p className="hidden">
+        <label>
+          Don't fill this out: <input name="bot-field" />
+        </label>
+      </p>
+      <h3 className="font-display text-xl font-bold text-foreground">
+        Or send me a message here
+      </h3>
+      <p className="mt-1 text-sm text-muted-foreground">
+        It goes straight to my email inbox.
+      </p>
+      <label className="mt-6 block text-sm font-medium text-foreground">
+        Your name
+        <input
+          type="text"
+          name="name"
+          required
+          maxLength={100}
+          className="mt-1 w-full rounded-xl border border-border bg-card px-4 py-3 text-sm text-card-foreground outline-none focus:border-primary"
+          placeholder="Jane Smith"
+        />
+      </label>
+      <label className="mt-4 block text-sm font-medium text-foreground">
+        Your email
+        <input
+          type="email"
+          name="email"
+          required
+          maxLength={255}
+          className="mt-1 w-full rounded-xl border border-border bg-card px-4 py-3 text-sm text-card-foreground outline-none focus:border-primary"
+          placeholder="jane@example.com"
+        />
+      </label>
+      <label className="mt-4 block text-sm font-medium text-foreground">
+        Your message
+        <textarea
+          name="message"
+          required
+          maxLength={1000}
+          rows={4}
+          className="mt-1 w-full rounded-xl border border-border bg-card px-4 py-3 text-sm text-card-foreground outline-none focus:border-primary"
+          placeholder="Hi Oliver! I'd like a website for my business..."
+        />
+      </label>
+      {error && <p className="mt-3 text-sm text-destructive">{error}</p>}
+      <button
+        type="submit"
+        className="mt-6 flex w-full items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105"
+      >
+        <Send className="h-4 w-4" />
+        Send message
+      </button>
+    </form>
+  );
+}
+
+function Index() {
+  return (
+    <div className="min-h-screen bg-background">
+      {/* Hero */}
+      <header className="mx-auto max-w-5xl px-6 pt-20 pb-16 text-center">
+        <p className="mb-4 inline-block rounded-full border border-primary/40 bg-primary/10 px-4 py-1 text-sm font-medium text-primary">
+          Websites built by Oliver Smith
+        </p>
+        <h1 className="font-display text-5xl font-extrabold leading-tight tracking-tight text-foreground sm:text-7xl">
+          A proper website,
+          <br />
+          <span className="text-primary">from just £30.</span>
+        </h1>
+        <p className="mx-auto mt-6 max-w-xl text-lg text-muted-foreground">
+          I build clean, fast, mobile-friendly websites for small businesses and
+          individuals. Pick a package, message me, and let's get you online.
+        </p>
+        <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-whatsapp px-8 py-4 text-base font-semibold text-whatsapp-foreground shadow-lg transition-transform hover:scale-105"
+          >
+            <MessageCircle className="h-5 w-5" />
+            WhatsApp me
+          </a>
+          <a
+            href={EMAIL_URL}
+            className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-8 py-4 text-base font-semibold text-card-foreground transition-colors hover:bg-accent"
+          >
+            <Mail className="h-5 w-5" />
+            Email me
+          </a>
+        </div>
+      </header>
+
+      {/* Pricing */}
+      <section className="mx-auto max-w-6xl px-6 pb-24">
+        <h2 className="mb-12 text-center font-display text-3xl font-bold text-foreground sm:text-4xl">
+          Simple, honest pricing
+        </h2>
+        <div className="grid gap-8 md:grid-cols-3">
+          {packages.map((pkg) => (
+            <div
+              key={pkg.price}
+              className={
+                pkg.featured
+                  ? "relative rounded-3xl border-2 border-primary bg-card p-8 shadow-xl shadow-primary/20"
+                  : "relative rounded-3xl border border-border bg-card p-8"
+              }
+            >
+              {pkg.featured && (
+                <span className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-primary px-4 py-1 text-xs font-bold uppercase tracking-wide text-primary-foreground">
+                  Most popular
+                </span>
+              )}
+              <p className="text-sm font-medium text-muted-foreground">
+                {pkg.tagline}
+              </p>
+              <div className="mt-2 flex items-baseline gap-2">
+                <span className="font-display text-5xl font-extrabold text-foreground">
+                  {pkg.price}
+                </span>
+                <span className="text-lg text-muted-foreground">
+                  / {pkg.pages}
+                </span>
+              </div>
+              <ul className="mt-6 space-y-3">
+                {pkg.features.map((f) => (
+                  <li key={f} className="flex items-start gap-2 text-sm text-card-foreground">
+                    <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                    {f}
+                  </li>
+                ))}
+              </ul>
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={
+                  pkg.featured
+                    ? "mt-8 flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105"
+                    : "mt-8 flex items-center justify-center gap-2 rounded-full border border-border bg-background px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-accent"
+                }
+              >
+                Get started
+                <ArrowRight className="h-4 w-4" />
+              </a>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Examples */}
+      <section className="mx-auto max-w-6xl px-6 pb-24">
+        <h2 className="mb-4 text-center font-display text-3xl font-bold text-foreground sm:text-4xl">
+          Example websites
+        </h2>
+        <p className="mx-auto mb-12 max-w-xl text-center text-muted-foreground">
+          Here's the kind of site you could get with each package.
+        </p>
+        <div className="grid gap-6 sm:grid-cols-2">
+          {examples.map((ex) => (
+            <div key={ex.name} className="overflow-hidden rounded-3xl border border-border bg-card">
+              <div className="border-b border-border">
+                <img
+                  src={ex.image}
+                  alt={`${ex.name} website example`}
+                  loading="lazy"
+                  width={1024}
+                  height={640}
+                  className="aspect-[8/5] w-full object-cover object-top"
+                />
+                <div className="flex flex-wrap gap-2 p-4">
+                  {ex.pages.map((p) => (
+                    <span key={p} className="rounded-full bg-muted px-3 py-1 text-xs text-foreground">
+                      {p}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className="p-6">
+                <div className="flex items-center justify-between gap-4">
+                  <h3 className="font-display text-xl font-bold text-card-foreground">{ex.name}</h3>
+                  <span className="rounded-full bg-primary/15 px-3 py-1 text-sm font-semibold text-primary">
+                    {ex.price}
+                  </span>
+                </div>
+                <p className="mt-2 text-sm text-muted-foreground">{ex.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Comparison */}
+      <section className="mx-auto max-w-5xl px-6 pb-24">
+        <h2 className="mb-12 text-center font-display text-3xl font-bold text-foreground sm:text-4xl">
+          Compare the packages
+        </h2>
+        <div className="overflow-x-auto rounded-3xl border border-border bg-card">
+          <table className="w-full min-w-[560px] text-left text-sm">
+            <thead>
+              <tr className="border-b border-border">
+                <th className="p-4 text-muted-foreground">What you get</th>
+                <th className="p-4 font-display text-lg text-card-foreground">£30</th>
+                <th className="p-4 font-display text-lg text-primary">£50</th>
+                <th className="p-4 font-display text-lg text-card-foreground">£70</th>
+              </tr>
+            </thead>
+            <tbody>
+              {comparison.map((row) => (
+                <tr key={row[0]} className="border-b border-border last:border-0">
+                  <td className="p-4 font-medium text-card-foreground">{row[0]}</td>
+                  {row.slice(1).map((cell, i) => (
+                    <td key={i} className="p-4 text-muted-foreground">{cell}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section className="border-t border-border bg-card">
+        <div className="mx-auto max-w-3xl px-6 py-20 text-center">
+          <h2 className="font-display text-3xl font-bold text-card-foreground sm:text-4xl">
+            Ready to get online?
+          </h2>
+          <p className="mt-4 text-lg text-muted-foreground">
+            The quickest way to reach me is WhatsApp or email — I don't take
+            phone calls, so drop me a message and I'll get back to you.
+          </p>
+          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-whatsapp px-8 py-4 text-base font-semibold text-whatsapp-foreground shadow-lg transition-transform hover:scale-105"
+            >
+              <MessageCircle className="h-5 w-5" />
+              07957 163127
+            </a>
+            <a
+              href={EMAIL_URL}
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-8 py-4 text-base font-semibold text-foreground transition-colors hover:bg-accent"
+            >
+              <Mail className="h-5 w-5" />
+              osmithy888@gmail.com
+            </a>
+          </div>
+          <ContactForm />
+        </div>
+      </section>
+
+      <footer className="border-t border-border py-8 text-center text-sm text-muted-foreground">
+        © {new Date().getFullYear()} Oliver Smith — Websites from £30
+      </footer>
+    </div>
+  );
+}

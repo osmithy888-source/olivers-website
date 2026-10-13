@@ -1,1 +1,25 @@
-IyBZb3VyIFdlYnNpdGUgQ3JlYXRvcgoKbWFrZSBhIHdlYnNpdGUgaSB3YW50IG15IHdlYnNpdGUgdG8gYmUgYWJvdXQgbWUgbWFraW5nIDMwIHF1aWQgNTAgcXVpZCBhbmQgNzAgcXVpZCB3ZWJzaXRlICAzMCBxdWlkIGlzIDMgcGFnZXMgNDAgaXMgNCBwYWdlcyAgNzAgcXVpZCBpcyA3IG15IHBob25lIG51bWJlciBpcyA3OTU3MTYzMTI3CQogIGFuZCBteSBlbWFpbCBpcyBvc21pdGh5ODg4QGdtYWlsLmNvbSBhbmQgaSBvbmx5IHdhbnQgdG8gYmUgd2F0c2FwcGVkIGFuZCBlbWFpbGVkCgpUaGlzIHByb2plY3Qgd2FzIGJ1aWx0IHdpdGggW0xvdmFibGVdKGh0dHBzOi8vbG92YWJsZS5kZXYpLgoKIyMgQnVpbGQgd2l0aCBMb3ZhYmxlCgpDb250aW51ZSBkZXZlbG9waW5nIHRoaXMgcHJvamVjdCBpbiB0aGUgW0xvdmFibGUgZWRpdG9yXShodHRwczovL2xvdmFibGUuZGV2L3Byb2plY3RzLzRiNmE4OTYyLWRiZjYtNDYwMi05OTA0LTQ1NjExMmQ3ZmZiMCkuCgotICoqU2hpcCBmYXN0ZXIqKjogZGVzY3JpYmUgd2hhdCB5b3Ugd2FudCB0byBidWlsZCBhbmQgTG92YWJsZSBoYW5kbGVzIHRoZSBjb2RlLgotICoqU3RheSBpbiBzeW5jKio6IGV2ZXJ5IGNoYW5nZSBtYWRlIGluIExvdmFibGUgaXMgY29tbWl0dGVkIHN0cmFpZ2h0IHRvIHRoaXMgcmVwb3NpdG9yeS4KLSAqKkZ1bGwgb3duZXJzaGlwKio6IHRoaXMgY29kZSBpcyB5b3Vycy4gUHVzaCB0byBgbWFpbmAgb24gR2l0SHViIGFuZCB5b3VyIGNoYW5nZXMgc3luYyBiYWNrIGludG8gTG92YWJsZSwgcmVhZHkgZm9yIHlvdXIgbmV4dCBwcm9tcHQuCgojIyBEZXZlbG9wbWVudAoKUHJlZmVyIHdvcmtpbmcgbG9jYWxseT8gWW91IG5lZWQgTm9kZS5qcyBhbmQgbnBtIOKAlCBbaW5zdGFsbCB3aXRoIG52bV0oaHR0cHM6Ly9naXRodWIuY29tL252bS1zaC9udm0jaW5zdGFsbGluZy1hbmQtdXBkYXRpbmcpLgoKYGBgc2gKZ2l0IGNsb25lIDx0aGlzLXJlcG9zaXRvcnktdXJsPgpjZCA8cmVwb3NpdG9yeS1uYW1lPgpucG0gaQpucG0gcnVuIGRldgpgYGAK
+# Your Website Creator
+
+make a website i want my website to be about me making 30 quid 50 quid and 70 quid website  30 quid is 3 pages 40 is 4 pages  70 quid is 7 my phone number is 7957163127	
+  and my email is osmithy888@gmail.com and i only want to be watsapped and emailed
+
+This project was built with [Lovable](https://lovable.dev).
+
+## Build with Lovable
+
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/4b6a8962-dbf6-4602-9904-456112d7ffb0).
+
+- **Ship faster**: describe what you want to build and Lovable handles the code.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+
+## Development
+
+Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+
+```sh
+git clone <this-repository-url>
+cd <repository-name>
+npm i
+npm run dev
+```

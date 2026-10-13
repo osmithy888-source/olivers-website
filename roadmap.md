@@ -1,1 +1,5 @@
-IyBSb2FkbWFwCgotIFNpdGUgY29kZSB1cGxvYWRlZCB0byBHaXRIdWIg4oCUIGRvbmUgKDc4IGZpbGVzIHZlcmlmaWVkIG9uIG1haW4pCi0gUmVwbyBuYW1lZCBgb2xpdmVycy13ZWJzaXRlYCBhcyByZXF1ZXN0ZWQg4oCUIGRvbmUKLSBPcGVuOiBub3RoaW5nIHdhaXRpbmcuIChSZXBvIGlzIHB1YmxpYzsgc2F5IHRoZSB3b3JkIHRvIG1ha2UgaXQgcHJpdmF0ZS4pCg==
+# Roadmap
+
+- Site code uploaded to GitHub — done (78 files verified on main)
+- Repo named `olivers-website` as requested — done
+- Open: nothing waiting. (Repo is public; say the word to make it private.)
